@@ -1,0 +1,32 @@
+body {
+  background-color: #000;
+}
+
+div {
+}
+
+.slideshowImage {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.slideshowDesc {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 10px;
+    left: 10px;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    color: #fff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: #000;
+}
