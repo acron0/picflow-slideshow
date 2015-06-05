@@ -23,14 +23,11 @@
         "</html>")})
 
 (defn handler [request]
-  (if (= "/" (:uri request))
-      (response/redirect "/help.html")
-      (render-app)))
+      (render-app))
 
-(def app 
+(def app
   (-> handler
     (resources/wrap-resource "public")))
 
 (defn -main [& args]
   (jetty/run-jetty app {:port 3001}))
-
