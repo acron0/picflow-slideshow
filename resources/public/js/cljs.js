@@ -15162,7 +15162,7 @@ hello_clojurescript.ajax_response_handler = function(a) {
   return cljs.core._EQ_.call(null, a.readyState, 4) ? cljs.core._EQ_.call(null, a.status, 200) ? hello_clojurescript.focus_image.call(null, hello_clojurescript.json_parse.call(null, b)) : null : null;
 };
 hello_clojurescript.get_new_picture = function() {
-  return hello_clojurescript.doget.call(null, "GET", "http://localhost:3000/random", hello_clojurescript.ajax_response_handler);
+  return hello_clojurescript.doget.call(null, "GET", "http://picflow.co/random", hello_clojurescript.ajax_response_handler);
 };
 hello_clojurescript.doc_ready_handler = function() {
   return cljs.core._EQ_.call(null, "complete", document.readyState) ? (hello_clojurescript.get_new_picture.call(null), setInterval(hello_clojurescript.get_new_picture, hello_clojurescript.delay)) : null;

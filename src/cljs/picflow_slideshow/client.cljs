@@ -30,12 +30,12 @@
           readyState (aget targ "readyState")
           resp (aget targ "response")
           readyState-ok (= readyState 4)]
-          (if readyState-ok  
+          (if readyState-ok
             (if (= (aget targ "status") 200 )
               (focus-image (json-parse resp))))))
 
 (defn get-new-picture []
-  (doget "GET" "http://localhost:3000/random" ajax-response-handler))
+  (doget "GET" "http://picflow.co/random" ajax-response-handler))
 
 (defn doc-ready-handler []
   (let[ ready-state (. js/document -readyState)]

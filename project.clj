@@ -8,7 +8,7 @@
             [lein-ring "0.8.10"]]
   :hooks [leiningen.cljsbuild]
   :source-paths ["src/clj"]
-  :cljsbuild { 
+  :cljsbuild {
     :builds {
       :main {
         :source-paths ["src/cljs"]
@@ -18,4 +18,3 @@
         :jar true}}}
   :main picflow-slideshow.server
   :ring {:handler picflow-slideshow.server/app})
-
